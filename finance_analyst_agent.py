@@ -16,7 +16,7 @@ web_search_agent=Agent(
     role="Search the web for the information",
     model=Groq(id="llama3-groq-70b-8192-tool-use-preview"),
     tools=[DuckDuckGo()],
-    instructions=["Alway include sources"],
+    instructions=["Always include sources"],
     show_tools_calls=True,
     markdown=True,
 
@@ -46,4 +46,4 @@ multi_ai_agent=Agent(
 )
 
 ## calling multi agent with instructions. 
-multi_ai_agent.print_response("Summarize analyst recommendation and share the latest news for NVDA",stream=True)
+multi_ai_agent.print_response("Summarize analyst recommendation and share the latest news for TSLA",stream=True)
